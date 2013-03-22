@@ -39,6 +39,7 @@
     [self.collectionView setFrame:CGRectMake(0, 0, 768, 512)];
     [self.collectionView setCollectionViewLayout:articleLayout animated:YES];
     self.collectionView.allowsSelection = TRUE;
+  
 }
 
 
@@ -52,7 +53,7 @@
      self.collectionView.allowsSelection = TRUE;
 
     [self.collectionView registerClass:[PhotoCVCell class] forCellWithReuseIdentifier:@"PhotoCVCell"];
-    
+      [cell.ImageView setContentMode:UIViewContentModeScaleAspectFill];
     
     imageArray = [NSArray arrayWithObjects:@"test01",
                   @"test02",

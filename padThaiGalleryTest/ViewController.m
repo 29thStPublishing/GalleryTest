@@ -35,7 +35,7 @@
     [self.collectionView setFrame:CGRectMake(0, 0, 768, 1024)];
     [self.collectionView setCollectionViewLayout:fullscreenLayout animated:YES];
     self.collectionView.allowsSelection = TRUE;
- 
+    [cell.ImageView setContentMode:UIViewContentModeScaleAspectFit];
 }
 
 
@@ -49,7 +49,7 @@
     [self.collectionView setFrame:CGRectMake(0, 0, 1024, 768)];
     [self.collectionView setCollectionViewLayout:landscapeLayout animated:YES];
     self.collectionView.allowsSelection = FALSE;
-
+    [cell.ImageView setContentMode:UIViewContentModeScaleAspectFit];
 
 }
 
@@ -88,7 +88,7 @@
     captionVisible = FALSE;
     
     [self.collectionView registerClass:[PhotoCVCell class] forCellWithReuseIdentifier:@"PhotoCVCell"];
-    
+   
     
     imageArray = [NSArray arrayWithObjects:@"test01",
                   @"test02",
