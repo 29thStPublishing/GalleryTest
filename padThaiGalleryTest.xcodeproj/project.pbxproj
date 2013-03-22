@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1F1A9116FCBB2F00660FCA /* PresentationCVLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1F1A9016FCBB2F00660FCA /* PresentationCVLayout.m */; };
+		BC1F1A9316FCC98300660FCA /* sideMenuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1F1A9216FCC98300660FCA /* sideMenuButton@2x.png */; };
+		BC1F1A9C16FCD6BD00660FCA /* dont01.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1F1A9716FCD6BD00660FCA /* dont01.png */; };
+		BC1F1A9D16FCD6BD00660FCA /* dont02.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1F1A9816FCD6BD00660FCA /* dont02.png */; };
+		BC1F1A9E16FCD6BD00660FCA /* dont03.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1F1A9916FCD6BD00660FCA /* dont03.png */; };
+		BC1F1A9F16FCD6BD00660FCA /* dont04.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1F1A9A16FCD6BD00660FCA /* dont04.png */; };
+		BC1F1AA016FCD6BD00660FCA /* dont05.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1F1A9B16FCD6BD00660FCA /* dont05.png */; };
+		BC1F1AA416FCDA0000660FCA /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1F1AA216FCDA0000660FCA /* PresentationViewController.m */; };
+		BC1F1AA516FCDA0000660FCA /* PresentationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1F1AA316FCDA0000660FCA /* PresentationViewController.xib */; };
 		BC3F070B16F235B7005EB247 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3F070A16F235B7005EB247 /* UIKit.framework */; };
 		BC3F070D16F235B7005EB247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3F070C16F235B7005EB247 /* Foundation.framework */; };
 		BC3F070F16F235B7005EB247 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3F070E16F235B7005EB247 /* CoreGraphics.framework */; };
@@ -38,6 +47,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1F1A8F16FCBB2F00660FCA /* PresentationCVLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationCVLayout.h; sourceTree = "<group>"; };
+		BC1F1A9016FCBB2F00660FCA /* PresentationCVLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationCVLayout.m; sourceTree = "<group>"; };
+		BC1F1A9216FCC98300660FCA /* sideMenuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sideMenuButton@2x.png"; sourceTree = "<group>"; };
+		BC1F1A9716FCD6BD00660FCA /* dont01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dont01.png; sourceTree = "<group>"; };
+		BC1F1A9816FCD6BD00660FCA /* dont02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dont02.png; sourceTree = "<group>"; };
+		BC1F1A9916FCD6BD00660FCA /* dont03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dont03.png; sourceTree = "<group>"; };
+		BC1F1A9A16FCD6BD00660FCA /* dont04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dont04.png; sourceTree = "<group>"; };
+		BC1F1A9B16FCD6BD00660FCA /* dont05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dont05.png; sourceTree = "<group>"; };
+		BC1F1AA116FCDA0000660FCA /* PresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationViewController.h; sourceTree = "<group>"; };
+		BC1F1AA216FCDA0000660FCA /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationViewController.m; sourceTree = "<group>"; };
+		BC1F1AA316FCDA0000660FCA /* PresentationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentationViewController.xib; sourceTree = "<group>"; };
 		BC3F070716F235B7005EB247 /* padThaiGalleryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = padThaiGalleryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC3F070A16F235B7005EB247 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BC3F070C16F235B7005EB247 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -93,6 +113,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC1F1A9416FCCB5D00660FCA /* layouts */ = {
+			isa = PBXGroup;
+			children = (
+				BC1F1A8F16FCBB2F00660FCA /* PresentationCVLayout.h */,
+				BC1F1A9016FCBB2F00660FCA /* PresentationCVLayout.m */,
+				BC3F073516F23E8E005EB247 /* ArticleCVLayout.h */,
+				BC3F073616F23E8E005EB247 /* ArticleCVLayout.m */,
+				BC3F073816F23EA1005EB247 /* FullScreenCVLayout.h */,
+				BC3F073916F23EA1005EB247 /* FullScreenCVLayout.m */,
+				BC3F073B16F23EAC005EB247 /* LandscapeCVLayout.h */,
+				BC3F073C16F23EAC005EB247 /* LandscapeCVLayout.m */,
+			);
+			name = layouts;
+			sourceTree = "<group>";
+		};
+		BC1F1A9516FCCB6C00660FCA /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC3F073016F23D37005EB247 /* PhotoCVCell.h */,
+				BC3F073116F23D37005EB247 /* PhotoCVCell.m */,
+				BC3F073216F23D37005EB247 /* PhotoCVCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		BC1F1A9616FCCB7600660FCA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC1F1AA116FCDA0000660FCA /* PresentationViewController.h */,
+				BC1F1AA216FCDA0000660FCA /* PresentationViewController.m */,
+				BC1F1AA316FCDA0000660FCA /* PresentationViewController.xib */,
+				BC9410B016F36DDC0053FB06 /* ArticleViewController.h */,
+				BC9410B116F36DDC0053FB06 /* ArticleViewController.m */,
+				BC9410B216F36DDC0053FB06 /* ArticleViewController.xib */,
+				BC3F072216F235B7005EB247 /* ViewController.h */,
+				BC3F072316F235B7005EB247 /* ViewController.m */,
+				BC3F072516F235B7005EB247 /* ViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		BC3F06FE16F235B7005EB247 = {
 			isa = PBXGroup;
 			children = (
@@ -127,22 +188,10 @@
 				BC3F072E16F23805005EB247 /* CustomNavController.m */,
 				BC3F071916F235B7005EB247 /* AppDelegate.h */,
 				BC3F071A16F235B7005EB247 /* AppDelegate.m */,
-				BC3F072216F235B7005EB247 /* ViewController.h */,
-				BC3F072316F235B7005EB247 /* ViewController.m */,
-				BC3F072516F235B7005EB247 /* ViewController.xib */,
-				BC3F073016F23D37005EB247 /* PhotoCVCell.h */,
-				BC3F073116F23D37005EB247 /* PhotoCVCell.m */,
-				BC3F073216F23D37005EB247 /* PhotoCVCell.xib */,
-				BC3F073516F23E8E005EB247 /* ArticleCVLayout.h */,
-				BC3F073616F23E8E005EB247 /* ArticleCVLayout.m */,
-				BC3F073816F23EA1005EB247 /* FullScreenCVLayout.h */,
-				BC3F073916F23EA1005EB247 /* FullScreenCVLayout.m */,
-				BC3F073B16F23EAC005EB247 /* LandscapeCVLayout.h */,
-				BC3F073C16F23EAC005EB247 /* LandscapeCVLayout.m */,
+				BC1F1A9616FCCB7600660FCA /* ViewControllers */,
+				BC1F1A9516FCCB6C00660FCA /* cell */,
+				BC1F1A9416FCCB5D00660FCA /* layouts */,
 				BC3F071116F235B7005EB247 /* Supporting Files */,
-				BC9410B016F36DDC0053FB06 /* ArticleViewController.h */,
-				BC9410B116F36DDC0053FB06 /* ArticleViewController.m */,
-				BC9410B216F36DDC0053FB06 /* ArticleViewController.xib */,
 			);
 			path = padThaiGalleryTest;
 			sourceTree = "<group>";
@@ -150,7 +199,13 @@
 		BC3F071116F235B7005EB247 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC1F1A9716FCD6BD00660FCA /* dont01.png */,
+				BC1F1A9816FCD6BD00660FCA /* dont02.png */,
+				BC1F1A9916FCD6BD00660FCA /* dont03.png */,
+				BC1F1A9A16FCD6BD00660FCA /* dont04.png */,
+				BC1F1A9B16FCD6BD00660FCA /* dont05.png */,
 				BC9410B516F37AEB0053FB06 /* Bubble.png */,
+				BC1F1A9216FCC98300660FCA /* sideMenuButton@2x.png */,
 				BC9410B616F37AEB0053FB06 /* Bubble@2x.png */,
 				BC9410AC16F36B450053FB06 /* backArrowWhite.png */,
 				BC9410AD16F36B450053FB06 /* backArrowWhite@2x.png */,
@@ -237,6 +292,13 @@
 				BC9410B416F36DDC0053FB06 /* ArticleViewController.xib in Resources */,
 				BC9410B716F37AEB0053FB06 /* Bubble.png in Resources */,
 				BC9410B816F37AEB0053FB06 /* Bubble@2x.png in Resources */,
+				BC1F1A9316FCC98300660FCA /* sideMenuButton@2x.png in Resources */,
+				BC1F1A9C16FCD6BD00660FCA /* dont01.png in Resources */,
+				BC1F1A9D16FCD6BD00660FCA /* dont02.png in Resources */,
+				BC1F1A9E16FCD6BD00660FCA /* dont03.png in Resources */,
+				BC1F1A9F16FCD6BD00660FCA /* dont04.png in Resources */,
+				BC1F1AA016FCD6BD00660FCA /* dont05.png in Resources */,
+				BC1F1AA516FCDA0000660FCA /* PresentationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +318,8 @@
 				BC3F073A16F23EA1005EB247 /* FullScreenCVLayout.m in Sources */,
 				BC3F073D16F23EAC005EB247 /* LandscapeCVLayout.m in Sources */,
 				BC9410B316F36DDC0053FB06 /* ArticleViewController.m in Sources */,
+				BC1F1A9116FCBB2F00660FCA /* PresentationCVLayout.m in Sources */,
+				BC1F1AA416FCDA0000660FCA /* PresentationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

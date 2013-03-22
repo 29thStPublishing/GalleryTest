@@ -11,7 +11,7 @@
 
 #define kItemHeight 300
 #define kItemWidth 300
-#define kMinimumLineSpacing 0
+#define kMinimumLineSpacing 0    
 
 @implementation ArticleCVLayout
 

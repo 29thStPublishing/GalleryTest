@@ -11,6 +11,7 @@
 #import "FullScreenCVLayout.h"
 #import "PhotoCVCell.h"
 #import "LandscapeCVLayout.h"
+#import "PresentationViewController.h"
 
 
 @interface ViewController ()
@@ -35,7 +36,7 @@
     [self.collectionView setFrame:CGRectMake(0, 0, 768, 1024)];
     [self.collectionView setCollectionViewLayout:fullscreenLayout animated:YES];
     self.collectionView.allowsSelection = TRUE;
-    [cell.ImageView setContentMode:UIViewContentModeScaleAspectFit];
+ 
 }
 
 
@@ -49,7 +50,7 @@
     [self.collectionView setFrame:CGRectMake(0, 0, 1024, 768)];
     [self.collectionView setCollectionViewLayout:landscapeLayout animated:YES];
     self.collectionView.allowsSelection = FALSE;
-    [cell.ImageView setContentMode:UIViewContentModeScaleAspectFit];
+
 
 }
 
@@ -88,7 +89,7 @@
     captionVisible = FALSE;
     
     [self.collectionView registerClass:[PhotoCVCell class] forCellWithReuseIdentifier:@"PhotoCVCell"];
-   
+    
     
     imageArray = [NSArray arrayWithObjects:@"test01",
                   @"test02",
@@ -244,6 +245,11 @@
     
     
     
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+        
+}
+
 
 
 
@@ -267,8 +273,7 @@
 
 - (IBAction)goBack:(id)sender {
     
-    [self.navigationController popToRootViewControllerAnimated:YES];
-    
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)toggleCaption:(id)sender {

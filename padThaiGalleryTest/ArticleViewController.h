@@ -8,14 +8,22 @@
 
 #import <UIKit/UIKit.h>
 @class ArticleCVLayout;
+@class PresentationCVLayout;
 @class PhotoCVCell;
 
 @interface ArticleViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate> {
     
     ArticleCVLayout *articleLayout;
+    PresentationCVLayout * presentationLayout;
     PhotoCVCell * cell;
     
     NSArray *imageArray;
+    
+    BOOL image0;
+    BOOL image1;
+    BOOL image2;
+    BOOL image3;
+    BOOL image4;
     
     BOOL reading;
     
