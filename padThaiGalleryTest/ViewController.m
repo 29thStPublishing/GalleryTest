@@ -226,9 +226,9 @@
     
     
     [self.collectionView invalidateIntrinsicContentSize];
+    [fullscreenLayout invalidateLayout];
     
-    
-        
+        /*
         
         if (UIDeviceOrientationIsPortrait(toInterfaceOrientation)) {
             
@@ -239,12 +239,15 @@
              [self landscapeGallery];
         }
         
-     
+     */
      
     }
     
     
-    
+   
+
+
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
         
@@ -273,7 +276,7 @@
 
 - (IBAction)goBack:(id)sender {
     
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)toggleCaption:(id)sender {

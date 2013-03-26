@@ -279,19 +279,14 @@
 
 
 
-/*
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     
     ViewController *vc = [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
-    [self.navigationController presentViewController:vc
-                                            animated:YES
-                                          completion:^{
-                                                }];
+    [self.navigationController pushViewController:vc animated:YES];
 
 }
-*/
-
 
 
 
