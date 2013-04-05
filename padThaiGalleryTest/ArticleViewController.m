@@ -185,7 +185,7 @@
 - (void)viewDidLoad
 {
     
-     articleLayout = [[ArticleCVLayout alloc]init];
+    articleLayout = [[ArticleCVLayout alloc]init];
     presentationLayout = [[PresentationCVLayout alloc]init];
     
     
@@ -193,11 +193,19 @@
     
     [self gestureCode];
     
-    [self.collectionView setCollectionViewLayout:presentationLayout animated:YES];
+
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+         [self.collectionView setCollectionViewLayout:articleLayout animated:YES];
+        
+    }else{
+        
+       [self.collectionView setCollectionViewLayout:presentationLayout animated:YES];  
+    }
+   
      self.collectionView.allowsSelection = TRUE;
 
+ 
     [self.collectionView registerClass:[PhotoCVCell class] forCellWithReuseIdentifier:@"PhotoCVCell"];
-    
     
     
     image0 = TRUE;

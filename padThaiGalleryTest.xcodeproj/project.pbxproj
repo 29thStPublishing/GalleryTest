@@ -38,6 +38,7 @@
 		BC3F074516F240E2005EB247 /* test03.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3F074016F240E2005EB247 /* test03.png */; };
 		BC3F074616F240E2005EB247 /* test04.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3F074116F240E2005EB247 /* test04.png */; };
 		BC3F074716F240E2005EB247 /* test05.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3F074216F240E2005EB247 /* test05.png */; };
+		BC5C8252170F426E003FEAE4 /* ArticleViewController_phone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5C8251170F426E003FEAE4 /* ArticleViewController_phone.xib */; };
 		BC9410AE16F36B450053FB06 /* backArrowWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9410AC16F36B450053FB06 /* backArrowWhite.png */; };
 		BC9410AF16F36B450053FB06 /* backArrowWhite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9410AD16F36B450053FB06 /* backArrowWhite@2x.png */; };
 		BC9410B316F36DDC0053FB06 /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9410B116F36DDC0053FB06 /* ArticleViewController.m */; };
@@ -90,6 +91,7 @@
 		BC3F074016F240E2005EB247 /* test03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test03.png; sourceTree = "<group>"; };
 		BC3F074116F240E2005EB247 /* test04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test04.png; sourceTree = "<group>"; };
 		BC3F074216F240E2005EB247 /* test05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test05.png; sourceTree = "<group>"; };
+		BC5C8251170F426E003FEAE4 /* ArticleViewController_phone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleViewController_phone.xib; sourceTree = "<group>"; };
 		BC9410AC16F36B450053FB06 /* backArrowWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backArrowWhite.png; sourceTree = "<group>"; };
 		BC9410AD16F36B450053FB06 /* backArrowWhite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backArrowWhite@2x.png"; sourceTree = "<group>"; };
 		BC9410B016F36DDC0053FB06 /* ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				BC9410B016F36DDC0053FB06 /* ArticleViewController.h */,
 				BC9410B116F36DDC0053FB06 /* ArticleViewController.m */,
 				BC9410B216F36DDC0053FB06 /* ArticleViewController.xib */,
+				BC5C8251170F426E003FEAE4 /* ArticleViewController_phone.xib */,
 				BC3F072216F235B7005EB247 /* ViewController.h */,
 				BC3F072316F235B7005EB247 /* ViewController.m */,
 				BC3F072516F235B7005EB247 /* ViewController.xib */,
@@ -299,6 +302,7 @@
 				BC1F1A9F16FCD6BD00660FCA /* dont04.png in Resources */,
 				BC1F1AA016FCD6BD00660FCA /* dont05.png in Resources */,
 				BC1F1AA516FCDA0000660FCA /* PresentationViewController.xib in Resources */,
+				BC5C8252170F426E003FEAE4 /* ArticleViewController_phone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +414,7 @@
 				GCC_PREFIX_HEADER = "padThaiGalleryTest/padThaiGalleryTest-Prefix.pch";
 				INFOPLIST_FILE = "padThaiGalleryTest/padThaiGalleryTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -421,6 +426,7 @@
 				GCC_PREFIX_HEADER = "padThaiGalleryTest/padThaiGalleryTest-Prefix.pch";
 				INFOPLIST_FILE = "padThaiGalleryTest/padThaiGalleryTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

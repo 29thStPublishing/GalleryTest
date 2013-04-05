@@ -18,8 +18,20 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   
     
-    self.viewController = [[ArticleViewController alloc] initWithNibName:@"ArticleViewController" bundle:nil];
+     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+    
+    self.viewController = [[ArticleViewController alloc] initWithNibName:@"ArticleViewController_phone" bundle:nil];
     customNavController = [[CustomNavController alloc]initWithRootViewController:self.viewController];
+         
+     } else{
+            
+             
+        self.viewController = [[ArticleViewController alloc] initWithNibName:@"ArticleViewController" bundle:nil];
+        customNavController = [[CustomNavController alloc]initWithRootViewController:self.viewController];
+
+             
+             
+         }
     
     [self.window setRootViewController:customNavController];
     [customNavController setNavigationBarHidden:YES];
