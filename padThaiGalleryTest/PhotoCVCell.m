@@ -19,8 +19,18 @@
     if (self) {
         
         // Initialization code
-        NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"PhotoCVCell" owner:self options:nil];
+     //   NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"PhotoCVCell" owner:self options:nil];
+               ImageView = [[UIImageView alloc] initWithFrame:frame];
+        [self.contentView addSubview:ImageView];
+        [ImageView setContentMode:UIViewContentModeScaleAspectFill];
         
+        NSLog(@" Image size %f, %f", ImageView.frame.size.width, ImageView.frame.size.height);
+       
+        
+        
+        
+        
+        /*
         if ([arrayOfViews count] < 1) {
             return nil;
         }
@@ -30,7 +40,7 @@
         }
         
         self = [arrayOfViews objectAtIndex:0];
-       
+       */
     }
     
     return self;
@@ -38,12 +48,18 @@
 }
 
 
-/*
+
 -(void)prepareForReuse
 {
-   [self setImageView:nil];
+    
+    [super prepareForReuse];
+    
+   //[self setImageView:nil];
 }
 
+
+
+/*
 -(void)setImage:(UIImage *)image
 {
     self.ImageView.image = image;

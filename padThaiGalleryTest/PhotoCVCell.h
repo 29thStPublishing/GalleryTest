@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotoCVCell : UICollectionViewCell
+@interface PhotoCVCell : UICollectionViewCell{
+    
+    
+    
+    UIImageView * ImageView;
+}
 
-@property (weak, nonatomic) IBOutlet UIImageView *ImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *ImageView;
 
 @end

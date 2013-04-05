@@ -9,7 +9,7 @@
 #import "ArticleCVLayout.h"
 
 
-#define kItemHeight 300
+#define kItemHeight 200
 #define kItemWidth 300
 #define kMinimumLineSpacing 0    
 

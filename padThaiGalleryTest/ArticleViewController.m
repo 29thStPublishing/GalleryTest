@@ -290,10 +290,15 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    
-    ViewController *vc = [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
+     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+    ViewController *vc = [[ViewController alloc]initWithNibName:@"ViewController_phone" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
-
+     }else{
+         ViewController *vc = [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
+         [self.navigationController pushViewController:vc animated:YES];
+  
+         
+     }
 }
 
 

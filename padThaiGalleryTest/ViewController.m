@@ -28,7 +28,7 @@
 
 
 
-
+/*
 
 - (void)portraitGallery{
     
@@ -64,14 +64,14 @@
 }
 
 
-
+*/
 
 
 
 - (void)viewDidLoad
 {
     
-    [self loadLayouts];
+  //  [self loadLayouts];
 
     [super viewDidLoad];
      UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
@@ -80,10 +80,10 @@
     if (orientation == UIDeviceOrientationPortrait) {
         
         [self.popUpView setFrame:CGRectMake(768, 0, 300, 1024)];
-        [self portraitGallery];
+        //[self portraitGallery];
     }else{
         [self.popUpView setFrame:CGRectMake(1024, 0, 300, 768)];
-        [self landscapeGallery];
+       // [self landscapeGallery];
     }
     
     captionVisible = FALSE;
